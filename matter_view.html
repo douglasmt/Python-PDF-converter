@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Teste</title>
+
+    <!-- Load 3rd party CSS and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- Include Script files from project -->
+    <script src="{{ url_for('static', filename='js/imanageApi.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/matter_view.js') }}"></script>
+
+</head>
+
+<!-- Add onload event handler on <body> -->
+<body onload="on_load()">
+
+
+<!-- Actual UI with dummy values; will be replaced with actual values in JS code -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 id="matter-id">(ID)</h1>
+        <p class="lead" id="matter-name">(Name)</p>
+        <ol>
+            <li>Custom1 = <span id="custom1">(Custom1)</span></li>
+            <li>Custom2 = <span id="custom2">(Custom2)</span></li>
+
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>

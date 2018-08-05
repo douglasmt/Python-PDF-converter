@@ -1,0 +1,25 @@
+<!--<html ng-app="peticionamento">-->
+<html ng-app="peticionamento">
+<head>
+    <title>Convert to PDF</title>
+
+    <!-- Load 3rd party CSS and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+    <!-- Include Script files from project -->
+    <script src="{{ url_for('static', filename='js/imanageApi.js') }}"></script>
+    
+	<script src="{{ url_for('static', filename='js/peticionamento_eletronico.js') }}"></script>	
+	
+
+</head>
+
+<body>
+
+<peticionamento-eletronico></peticionamento-eletronico>
+
+
+</body>
+</html>

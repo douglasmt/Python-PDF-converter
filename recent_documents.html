@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Recent Documents</title>
+</head>
+<body>
+
+<h1>Recent Documents for {{ user.full_name or user.user_id }}</h1>
+<ol>
+    {% for doc in recent %}
+        <li>{{doc.name}}.{{doc.extension}}</li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>

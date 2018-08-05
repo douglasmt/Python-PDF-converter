@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Peticionamento Eletrônico</title>
+
+    <!-- Load 3rd party CSS and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- Include Script files from project -->
+    <script src="{{ url_for('static', filename='js/imanageApi.js') }}"></script>    
+	<script src="{{ url_for('static', filename='js/peticionamento_eletronico.js') }}"></script>
+
+</head>
+
+<!-- Add onload event handler on <body> -->
+<body onload="on_load()">
+
+<split-pdf>
+
+<!-- Actual UI with dummy values; will be replaced with actual values in JS code -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 id="matter-id">(ID)</h1>
+        <p class="lead" id="matter-name">(Name)
+        <ol>
+            <li>Custom1 = <span id="custom1">(Custom1)</span></li>
+            <li>Custom2 = <span id="custom2">(Custom2)</span></li>
+
+        </ol>
+    </div>
+</div>
+    		
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo1">TJRJ	</a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo2">TJSP – TJCE – TJRO – SEFAZ-SE </a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo3">TRT 1 AO 24 </a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo4">WP / GED </a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo5">e-PAT</a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo6">TJMG </a>
+</div>
+<div class="col-md-12">
+	<a class="btn btn-primary" style="margin-top: 10px;" href="http://localhost:5000/peticionamento-eletronico-tipo7">TRF2 </a>
+</div>
+
+</split-pdf>
+
+</body>
+</html>
+
+<!--
+<ws-login login-type="'imanage'" class="ng-isolate-scope"><div class="container">
+  <div class="login-dialog">
+
+    <div class="ws-browser-check ng-scope" ng-controller="wsBrowserCheckController as check">
+      <!-- ngIf: check.failed -- >
+    </div>
+
+    <form role="form" autocomplete="on" novalidate="" name="loginForm" method="post" action="/login/authenticate" ng-submit="$ctrl.submitted()" class="ng-pristine ng-invalid ng-invalid-required">
+      <div class="panel panel-transparent login-panel">
+        <div class="panel-body">
+          <div class="panel-content">
+
+            <!-- Hidden fields -- >
+            <input name="redirect_url" type="hidden" ng-value="$ctrl.redirect_url" value="/">
+            <input name="login_type" type="hidden" value="imanage">
+
+            <div qi="login-icon-logo" class="ws-login-logo">
+              <i class="ws-icon wsi-logo ws-icon-no-float"></i>
+            </div>
+
+            <!-- ngIf: $ctrl.loginType == 'welcome' -- >
+
+            <!-- ngIf: $ctrl.loginType != 'welcome' -- ><div class="login-section ng-scope" ng-if="$ctrl.loginType != 'welcome'">
+              <!-- username input box -- >
+              <div class="form-group test-username">
+                <label class="control-label sr-only ng-scope" for="userId" translate="">Document Number</label>
+			  </div>
+
+              <!-- Login button -- >
+              <button type="submit" class="btn login-button btn-primary btn-block" ng-disabled="$ctrl.loggingIn" qi="login-btn-ogin">
+                <!-- ngIf: $ctrl.loggingIn -- >
+                <!-- ngIf: !$ctrl.loggingIn -- ><span ng-if="!$ctrl.loggingIn" translate="" class="ng-scope">Confirma</span><!-- end ngIf: !$ctrl.loggingIn -- >
+              </button>
+            </div><!-- end ngIf: $ctrl.loginType != 'welcome' -- >
+
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+</ws-login>
+-->
